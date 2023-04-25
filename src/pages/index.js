@@ -6,6 +6,7 @@ import Layout from '@/components/Layout'
 import Banner from "@/components/Banner"
 import BannerText from "@/components/BannerText"
 import FeaturedServices from "@/components/FeaturedServices"
+import BannerVideo from "@/components/BannerVideo"
 
 export default function Home() {
   return (
@@ -31,6 +32,12 @@ export default function Home() {
       <FeaturedServices
         title="What We Do"
         introduction="Let us help with your next album"
+      />
+      <BannerVideo 
+        videoSrcURL1="https://www.youtube.com/embed/tLRp9vaY6VM"
+        videoTitle1="Abstrakt Noize 3 Official Visualizer"
+        videoSrcURL2="https://www.youtube.com/embed/sGTUfrIFbFw"
+        videoTitle2="Peace of Mind prod by Jiro"
       />
       </Layout>
     </>
