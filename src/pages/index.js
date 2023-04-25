@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Banner from "@/components/Banner"
 import BannerText from "@/components/BannerText"
+import FeaturedServices from "@/components/FeaturedServices"
 
 export default function Home() {
   return (
@@ -26,6 +27,10 @@ export default function Home() {
         content="- Bjork"
         link="/services"
         linkText="View Services"
+      />
+      <FeaturedServices
+        title="What We Do"
+        introduction="Let us help with your next album"
       />
       </Layout>
     </>
