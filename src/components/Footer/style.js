@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const FooterStyles = styled.footer`
   &.section {
-    padding: 0 var(--borderSpacing) var(--gap) var(--borderSpacing);
+    padding: 0px;
 
     .container {
       display: flex;
@@ -30,6 +30,19 @@ export const FooterStyles = styled.footer`
       }
     }
   }
+
+  .gradient {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: radial-gradient(
+      at bottom right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+    padding-left: 75px;
+    padding-bottom: 75px;
+  }
 `
 
 export const FooterMenuStyles = styled.div`
@@ -39,7 +52,7 @@ export const FooterMenuStyles = styled.div`
   }
 
   h5 {
-    margin-top: 0;
+    margin-top: 20px;
     display: inline-block;
     border-bottom: 2px solid #333;
 

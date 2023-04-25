@@ -14,6 +14,7 @@ const Footer = () => {
   // const allProduct = useAllProduct()
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
+      <div className="gradient">
       <div className="container container__tight">
         <FooterMenuStyles className="footer__menu">
           <h5>Links</h5>
@@ -118,6 +119,7 @@ const Footer = () => {
           </p>
         </div>
       </CopyrightStyles>
+      </div>
     </FooterStyles>
   )
 }

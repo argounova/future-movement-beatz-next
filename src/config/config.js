@@ -6,7 +6,7 @@ export const metadata = {
     youtubeUsername: "abstraktius_artimus",
     instagramUsername: "abstraktius_artimus",
     image: "/background1.jpg",
-    siteUrl: "https://futuremovementbeatzmain.gatsbyjs.io/",
-    developerName: "DM Solutions",
-    developerUrl: "https://www.digitalmotorsportsolutions.com",
+    siteUrl: "https://futuremovementbeatz.com/",
+    developerName: "Turn17 Media",
+    developerUrl: "https://www.turn17media.com",
 }
