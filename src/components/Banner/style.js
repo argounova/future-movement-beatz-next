@@ -19,6 +19,7 @@ export const Styles = styled.section`
     left: 0;
     width: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
     z-index: 1;
   }
 
