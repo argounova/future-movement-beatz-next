@@ -3,7 +3,7 @@ import Link from "next/link"
 import MenuContext from "../../context/menu"
 import { motion } from "framer-motion"
 import { menuItems } from "./constants"
-import { siteMetadata } from "../../config/config"
+import { metadata } from "../../config/config"
 import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
     Styles,
@@ -32,7 +32,7 @@ const Navigation = () => {
       setSubNav((subNavIsOpen) => !subNavIsOpen)
     }
 
-    const { title } = "title"
+    const { title } = metadata.title
 
     return (
         <Styles>

@@ -1,6 +1,5 @@
 import * as React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { Styles } from "./style"
 import { Button } from "@mui/material"
 import bannerImage from "../../../public/images/banner-image.jpg"
@@ -17,7 +16,6 @@ const Banner = ({ children, title, subTitle, contact }) => {
             src={bannerImage}
             alt="Banner Image"
             className="banner__image"
-            imgClassName="banner__image--content"
           />
         )}
         <div className="container">
