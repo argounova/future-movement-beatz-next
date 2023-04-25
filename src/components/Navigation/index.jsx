@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import MenuContext from "../../context/menu"
 import { motion } from "framer-motion"
@@ -19,6 +20,7 @@ import {
     menuList,
     subMenuNavVariants,
 } from "./anim"
+import logo from '../../../public/logov2.png'
 
 const Navigation = () => {
     const [isOpen, setNav] = useContext(MenuContext)
@@ -31,8 +33,6 @@ const Navigation = () => {
     const toggleSubNav = () => {
       setSubNav((subNavIsOpen) => !subNavIsOpen)
     }
-
-    const { title } = metadata.title
 
     return (
         <Styles>
@@ -59,14 +59,14 @@ const Navigation = () => {
                   variants={barThreeVariants}
                 ></motion.span>
               </HamburgerStyles>
-    
-              {title && (
-                <LogoStyles>
-                  <Link href="/">
-                    {title}
-                  </Link>
-                </LogoStyles>
-              )}
+              <Link href="/">
+                <Image 
+                  src={logo}
+                  alt="logo"
+                  height={80}
+                  width={90}
+                />
+              </Link>
             </div>
           </div>
           <motion.div

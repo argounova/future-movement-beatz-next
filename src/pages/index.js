@@ -4,6 +4,7 @@ import Head from 'next/head'
 // import styles from '@/styles/Home.module.css'
 import Layout from '@/components/Layout'
 import Banner from "@/components/Banner"
+import BannerText from "@/components/BannerText"
 
 export default function Home() {
   return (
@@ -20,6 +21,12 @@ export default function Home() {
           subTitle="Music production and custom album cover art."
           contact={false}        
         />
+        <BannerText
+        title="It is important that the musician just lets the music be written."
+        content="- Bjork"
+        link="/services"
+        linkText="View Services"
+      />
       </Layout>
     </>
   )

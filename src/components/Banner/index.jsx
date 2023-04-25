@@ -1,7 +1,7 @@
 import * as React from "react"
 import Image from "next/image"
 import { Styles } from "./style"
-import { Button } from "@mui/material"
+import Button from "../Button"
 import bannerImage from "../../../public/images/banner-image.jpg"
 
 const Banner = ({ children, title, subTitle, contact }) => {
@@ -16,6 +16,7 @@ const Banner = ({ children, title, subTitle, contact }) => {
             src={bannerImage}
             alt="Banner Image"
             className="banner__image"
+            
           />
         )}
         <div className="container">
@@ -30,9 +31,9 @@ const Banner = ({ children, title, subTitle, contact }) => {
                     href="/contact"
                   />
                 : <Button
-                  className="btn"
-                  text="Learn More"
-                  href="/about"
+                    className="btn"
+                    text="Learn More"
+                    href="/about"
                   />
               }
             </div>

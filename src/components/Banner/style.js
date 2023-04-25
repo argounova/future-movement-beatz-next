@@ -18,16 +18,17 @@ export const Styles = styled.section`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    object-fit: cover;
     z-index: 1;
   }
 
   .gradient {
     background: radial-gradient(
       at bottom left,
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0)
     );
+    height: 100%;
   }
 
   .banner__content {
