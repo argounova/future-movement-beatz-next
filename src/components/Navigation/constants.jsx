@@ -7,10 +7,10 @@ export const menuItems = [
     path: "/about",
     text: "about",
   },
-  {
-    path: "/comingsoon",
-    text: "news",
-  },
+  // {
+  //   path: "/comingsoon",
+  //   text: "news",
+  // },
   {
     path: "/contact",
     text: "contact",

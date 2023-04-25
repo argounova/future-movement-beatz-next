@@ -82,7 +82,7 @@ const Navigation = () => {
                   <Link
                     onClick={toggleNav}
                     onKeyDown={toggleNav}
-                    href="/"
+                    href={item.path}
                     activeClassName="menu__item--active"
                   >
                     {item.text}

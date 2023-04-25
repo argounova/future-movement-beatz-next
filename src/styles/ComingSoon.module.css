@@ -1,0 +1,28 @@
+.comingSoonDiv {
+    background: linear-gradient(180deg, rgba(8,8,10,0.4) 0%, rgba(36,36,38,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.comingSoonTitle {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.comingSoonInfo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+@media screen and (max-width: 575px) {
+    .comingSoonTitle {
+        font-size: 4rem;
+    }
+}
