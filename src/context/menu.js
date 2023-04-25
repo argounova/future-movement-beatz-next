@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, createContext } from "react"
 
-const MenuContext = React.createContext()
+const MenuContext = createContext()
 
 export function MenuProvider({ children }) {
   const [isOpen, setNav] = useState([])

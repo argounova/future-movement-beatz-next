@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react"
-import { Link } from "gatsby"
-import MenuContext from "../MenuContext"
+import Link from "next/link"
+import MenuContext from "../../context/menu"
 import { motion } from "framer-motion"
 import { menuItems } from "./constants"
-import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+import { siteMetadata } from "../../config/config"
 import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
     Styles,
@@ -32,7 +32,7 @@ const Navigation = () => {
       setSubNav((subNavIsOpen) => !subNavIsOpen)
     }
 
-    const { title } = UseSiteMetadata()
+    const { title } = "title"
 
     return (
         <Styles>
@@ -62,7 +62,7 @@ const Navigation = () => {
     
               {title && (
                 <LogoStyles>
-                  <Link to="/">
+                  <Link href="/">
                     {title}
                   </Link>
                 </LogoStyles>
@@ -82,7 +82,7 @@ const Navigation = () => {
                   <Link
                     onClick={toggleNav}
                     onKeyDown={toggleNav}
-                    to={item.path}
+                    href="/"
                     activeClassName="menu__item--active"
                   >
                     {item.text}
@@ -107,7 +107,7 @@ const Navigation = () => {
                       <Link
                         onClick={toggleNav}
                         onKeyDown={toggleNav}
-                        to="/services/all"
+                        href="/services/all"
                       >
                         All Services
                       </Link>

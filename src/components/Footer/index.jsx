@@ -3,7 +3,7 @@ import Link from "next/link"
 import { menuItems } from "../../constants/links"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./style"
 // import useAllProduct from "../../hooks/use-all-product"
-import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+import { metadata } from "../../config/config"
 import {
   FaTiktok as Tiktok,
   FaInstagram as Instagram,
@@ -12,7 +12,6 @@ import {
 
 const Footer = () => {
   // const allProduct = useAllProduct()
-  const siteMeta = UseSiteMetadata()
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
       <div className="container container__tight">
@@ -57,18 +56,18 @@ const Footer = () => {
           </FooterMenuStyles>
         {/* )} */}
 
-        {siteMeta.tiktokUsername ||
-        siteMeta.instagramUsername ||
-        siteMeta.youtubeUsername ? (
+        {metadata.tiktokUsername ||
+        metadata.instagramUsername ||
+        metadata.youtubeUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
               Follow Future Movement Beatz
             </h5>
             <ul>
-              {siteMeta.tiktokUsername && (
+              {metadata.tiktokUsername && (
                 <li>
                   <a
-                    href={`https://www.tiktok.com/@${siteMeta.tiktokUsername}`}
+                    href={`https://www.tiktok.com/@${metadata.tiktokUsername}`}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
@@ -76,10 +75,10 @@ const Footer = () => {
                   </a>
                 </li>
               )}
-              {siteMeta.instagramUsername && (
+              {metadata.instagramUsername && (
                 <li>
                   <a
-                    href={`https://www.instagram.com/${siteMeta.instagramUsername}`}
+                    href={`https://www.instagram.com/${metadata.instagramUsername}`}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
@@ -87,10 +86,10 @@ const Footer = () => {
                   </a>
                 </li>
               )}
-              {siteMeta.youtubeUsername && (
+              {metadata.youtubeUsername && (
                 <li>
                   <a
-                    href={`https://www.youtube.com/@${siteMeta.youtubeUsername}`}
+                    href={`https://www.youtube.com/@${metadata.youtubeUsername}`}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
@@ -109,11 +108,11 @@ const Footer = () => {
           <p>
             Designed & developed by{" "}
             <a
-              href={siteMeta.developerUrl}
+              href={metadata.developerUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {siteMeta.developerName}
+              {metadata.developerName}
             </a>
             <span>.</span>
           </p>
