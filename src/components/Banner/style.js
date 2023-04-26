@@ -26,8 +26,8 @@ export const Styles = styled.section`
   .gradient {
     background: radial-gradient(
       at bottom left,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
     );
     height: 100%;
   }

@@ -15,8 +15,8 @@ export const Styles = styled.section`
     z-index: 1;
     background: radial-gradient(
       at top left,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
     );
     padding-left: 75px;
     padding-bottom: 75px;

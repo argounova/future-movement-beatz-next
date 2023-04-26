@@ -37,7 +37,7 @@ export const FooterStyles = styled.footer`
     z-index: 1;
     background: radial-gradient(
       at bottom right,
-      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0)
     );
     padding-left: 75px;

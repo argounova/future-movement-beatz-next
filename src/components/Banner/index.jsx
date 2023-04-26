@@ -2,7 +2,9 @@ import * as React from "react"
 import Image from "next/image"
 import { Styles } from "./style"
 import Button from "../Button"
-import bannerImage from "../../../public/images/banner-image.jpg"
+
+// Photo by Tim Mossholder: https://www.pexels.com/photo/make-war-graffiti-2180805/
+import bannerImage from "../../../public/images/banner-image.png"
 
 const Banner = ({ children, title, subTitle, contact }) => {
   return (

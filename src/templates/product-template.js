@@ -2,12 +2,20 @@ import React from "react"
 // import Seo from "../components/SEO"
 import Image from "next/image"
 import styled from "@emotion/styled"
-import Banner from "../components/Banner/index"
+import BannerService from "@/components/BannerService"
 import Faq from "../components/Faq"
+
+// Photo by Luis Quintero from Pexels: https://www.pexels.com/photo/man-taking-a-knee-in-front-of-wall-with-mural-2068149/
 import svcImg1 from "../../public/images/artwork-service-background.jpeg"
+
+// Photo by Vincent Gerbouin from Pexels: https://www.pexels.com/photo/gray-and-teal-animal-skeleton-wall-decor-2263686/
 import svcImg2 from "../../public/images/production-service-background.jpeg"
+
+// Photo by Hugo Heimendinger from Pexels: https://www.pexels.com/photo/street-art-1766231/
 import svcImg3 from "../../public/images/mixing-service-background.jpeg"
-import svcImg4 from "../../public/images/all-services-background.jpeg"
+
+// Photo by Aleksandar Pasaric from Pexels: https://www.pexels.com/photo/graffiti-art-on-wall-3048528/
+import svcImg4 from "../../public/images/all-services-background.png"
 
 const ServiceTemplateStyles = styled.div`
   .container {
@@ -54,52 +62,47 @@ const ServiceTemplate = (serviceInfo) => {
     description,
     faqs,
   } = serviceInfo
-  // const serviceHeaderImage = getImage(headerImage)
+
   return (
     <>
-      <Banner
+      <BannerService
         title={title}
         subTitle={introduction}
         contact={true}
       >
         {headerImageArtwork && (
           <Image
+            priority
             className="banner__image"
             src={svcImg1}
             alt={title}
-            height={800}
-            width={1980}
           />
         )}
         {headerImageProduction && (
           <Image
+            priority
             className="banner__image"
             src={svcImg2}
             alt={title}
-            height={800}
-            width={1980}
           />
         )}
         {headerImageMixing && (
           <Image
+            priority
             className="banner__image"
             src={svcImg3}
             alt={title}
-            height={800}
-            width={1980}
           />
         )}
         {headerImageAll && (
           <Image
+            priority
             className="banner__image"
             src={svcImg4}
             alt={title}
-            height={800}
-            width={1980}
           />
         )}
-   
-      </Banner>
+      </BannerService>
       <ServiceTemplateStyles className="section">
         <div className="container container__tight">
           {description && (
