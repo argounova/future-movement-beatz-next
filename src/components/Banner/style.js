@@ -18,8 +18,8 @@ export const Styles = styled.section`
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    background-repeat: no-repeat;
     z-index: 1;
   }
 
@@ -29,7 +29,6 @@ export const Styles = styled.section`
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.1)
     );
-    height: 100%;
   }
 
   .banner__content {

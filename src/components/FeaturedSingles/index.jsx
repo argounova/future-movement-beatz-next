@@ -1,5 +1,6 @@
 import * as React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { FeaturedSinglesStyles } from "./style"
 import { FeaturedSingleStyles } from "./style"
 import Button from "../Button/index"
@@ -21,11 +22,13 @@ const FeaturedSingles = ({ title, introduction }) => {
       ) : null}
       <div className="container container__tight container__scroll">
         <FeaturedSingleStyles>
-          <Image
-            className="features__item--img"
-            src={sngImg1}
-            alt="peace of mind single"
-          />
+          <Link href="https://distrokid.com/hyperfollow/abstraktiusartimus/peace-of-mind" target="_blank" rel="no referrer">
+            <Image
+              className="features__item--img"
+              src={sngImg1}
+              alt="peace of mind single"
+            />
+          </Link>
           <div className="features__item--content">
             <h4>Peace of Mind</h4>
             <p>2:29</p>
@@ -42,11 +45,13 @@ const FeaturedSingles = ({ title, introduction }) => {
         </FeaturedSingleStyles>
 
         <FeaturedSingleStyles>
-          <Image
-            className="features__item--img"
-            src={sngImg2}
-            alt="don't wanna see me win single"
-          />
+          <Link href="https://distrokid.com/hyperfollow/abstraktiusartimus/dont-wanna-see-me-win" target="_blank" rel="no referrer">
+            <Image
+              className="features__item--img"
+              src={sngImg2}
+              alt="don't wanna see me win single"
+            />
+          </Link>
             <div className="features__item--content">
               <h4>Don&apos;t Wanna See Me Win</h4>
               <p>2:39</p>
@@ -63,11 +68,13 @@ const FeaturedSingles = ({ title, introduction }) => {
         </FeaturedSingleStyles>
 
         <FeaturedSingleStyles>
-          <Image
-            className="features__item--img"
-            src={sngImg3}
-            alt="abstrakt noize 3 single"
-          />
+          <Link href="https://distrokid.com/hyperfollow/abstraktiusartimus/abstrakt-noize-3-2" target="_blank" rel="no referrer">
+            <Image
+              className="features__item--img"
+              src={sngImg3}
+              alt="abstrakt noize 3 single"
+            />
+          </Link>
             <div className="features__item--content">
               <h4>Abstrakt Noize 3</h4>
               <p>3:17</p>

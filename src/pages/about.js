@@ -22,8 +22,6 @@ const contact = () => {
             className="banner__image"
             src={aboutImg}
             alt="smoke background"
-            height={660}
-            width={2400}
           />
         </SimpleBanner>
         <About />

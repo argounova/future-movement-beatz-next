@@ -20,6 +20,8 @@ export const SimpleBannerStyles = styled.section`
     bottom: 0;
     right: 0;
     z-index: 1;
+    height: 85%;
+    width: 100%;
   }
 
   .gradient {
