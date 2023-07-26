@@ -1,22 +1,54 @@
 import { AboutStyles } from "./style"
+import { motion } from "framer-motion"
+import {
+  Container,
+  Typography,
+} from "@mui/material"
 import Button from "../Button"
+import aboutContent from "./content"
+
 
 const About = () => {
   return (
-    <AboutStyles className="section">
-      <div>
-        <h2>Stevan Jaramillo</h2>
-        <h5>Owner & Founder</h5>
-        <p>Welcome to Future Movement Beatz, your go-to music production company for all your audio needs! Established in 2012, we are a team of experienced music producers, engineers and artists dedicated to delivering top-quality music production services.</p>
-        <p>At Future Movement Beatz, we are passionate about music and committed to helping artists and musicians bring their creative visions to life. We are more than a music production company, we are a community built around helping artists make connections. Artists from all around the world have joined the community and join regularly. Not only do we offer music production services, we also offer a place to network for free.</p>
-        <p>Future Movement Beatz is proud to be committed to excellence. Whether it be custom album art, music production or mixing & mastering, we will deliver outstanding results. We are community driven and set ourselves to higher standards.</p>
-        <p>Thank you for choosing Future Movement Beatz as your music production partner. We are excited to embark on this musical journey with you and bring your vision to life. Contact us today to discuss your project and let&apos;s create something extraordinary together!</p>
-      </div>
-      <Button 
-        href="/contact"
-        text="Get In Touch"
-        arrow={true}
-      />
+    <AboutStyles>
+      <Container maxWidth="xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2.5 }}
+        >
+          <Typography variant="h4" align="center" style={{ color: 'var(--contrastLight3)' }}>Welcome to Future Movement Beatz, where creativity knows no bounds. Founded and owned by Stevan Jaramillo, also known as Abstraktius Artimus, our journey began in 2012 with a singular vision: <span style={{ color: 'var(--fmbPurple5)' }}>to help artists achieve unparalleled success in their musical endeavors</span>.</Typography>
+        </motion.div>
+        <hr />
+        {aboutContent.map((section) => (
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            style={{ marginBottom: "20px" }}
+          >
+            <Typography
+              variant="h4"
+              style={{ color: "var(--contrastLight3)" }}
+              key={section.index}
+            >
+              {section.heading}
+            </Typography>
+            <Typography
+              variant="h6"
+              style={{ color: "var(--contrastLight2)" }}
+            >
+              {section.content}
+            </Typography>
+          </motion.div>
+        ))}
+        <br />
+        <Button 
+          href="/contact"
+          text="Get In Touch"
+          arrow={true}
+        />
+      </Container>  
     </AboutStyles>
   )
 }
