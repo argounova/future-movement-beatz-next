@@ -1,30 +1,17 @@
 import React from "react"
-import ProductTemplate from "../../templates/product-template"
 import Layout from "../../components/Layout"
 import Head from "next/head"
+import MixingComponent from "@/components/MixingServiceContent"
 
 
 const MixingService = (serviceInfo) => {
     serviceInfo = {
         headerImageMixing: true,
-        title: 'Mixing and Mastering',
-        introduction: 'Introduction for mixing and mastering goes here',
+        title: 'Experience Sonic Brilliance',
+        introduction: 'Music Mixing and Mastering by Abstraktius Artimus',
         description: 'Description for mixing and mastering goes here',
-        faqs: [
-            {
-                question: 'FAQ Question 1',
-                answer: 'FAQ Answer 1',
-            },
-            {
-                question: 'FAQ Question 2',
-                answer: 'FAQ Answer 2',
-            },
-            {
-                question: 'FAQ Question 3',
-                answer: 'FAQ Answer 3',
-            },
-        ]
     }
+
   return (
     <>
       <Head>
@@ -34,9 +21,7 @@ const MixingService = (serviceInfo) => {
         <link rel="icon" href="/logov2.png" />
       </Head>      
       <Layout>
-        <ProductTemplate
-            {...serviceInfo}       
-        />
+        <MixingComponent />
       </Layout>
     </>
   )

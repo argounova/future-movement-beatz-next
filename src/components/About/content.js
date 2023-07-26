@@ -1,9 +1,5 @@
 const aboutContent = [
     {
-        heading: "",
-        content: "",
-    },
-    {
         heading: "Our Mission",
         content: "At Future Movement Beatz, we are on a mission to empower artists, nurture their talents, and provide them with the tools to unlock their full potential. We believe that every aspiring artist deserves a platform to shine and we are dedicated to being the guiding force on their path to greatness.",
     },
