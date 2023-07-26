@@ -19,8 +19,8 @@ const FeaturedServices = ({ title, introduction }) => {
         </div>
       ) : null}
       <div className="container container__tight container__scroll">
-        {fmbServices.map((service) => (
-          <FeaturedProductStyles>
+        {fmbServices.map((service, index) => (
+          <FeaturedProductStyles key={index}>
             <Link href={`${service.linkTo}`}>
               <Image
                 className="features__item--img"
