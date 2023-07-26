@@ -9,6 +9,6 @@ export const metadata = {
     linktreeUsername: "AbstraktiusArtimus",
     image: "/background1.jpg",
     siteUrl: "https://futuremovementbeatz.com/",
-    developerName: "Turn17 Media",
+    developerName: "Turn17 Media, LLC",
     developerUrl: "https://www.turn17media.com",
 }

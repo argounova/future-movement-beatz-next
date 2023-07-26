@@ -21,7 +21,7 @@ export default function Home() {
       <Layout>
         <Banner
           title="Future Movement Beatz"
-          subTitle="Music production and custom album cover art."
+          subTitle="Music production, custom album art cover art, mixing & mastering, and playlist curating."
           contact={false}        
         />
         <BannerText

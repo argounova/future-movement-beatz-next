@@ -38,7 +38,7 @@ const FeaturedServices = ({ title, introduction }) => {
         ))}
       </div>
       <div className="container container__tight learn__more">
-        <Button href="/comingsoon" text="All Services" />
+        <Button href="/services/all" text="All Services" />
       </div>
     </FeaturedProductsStyles>
   )

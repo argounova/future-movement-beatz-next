@@ -36,7 +36,7 @@ export const Styles = styled.section`
     z-index: 2;
     min-height: 33vh;
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
 
     @media (min-width: 768px) {
       width: 66vw;

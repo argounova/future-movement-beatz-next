@@ -110,19 +110,7 @@ const ServiceTemplate = (serviceInfo) => {
               {description}
             </div>
           )}
-          {faqs && (
-            <div className="column">
-              {faqs.map((item, index) => {
-                return(
-                  <Faq
-                    key={index}
-                    title={item.question}
-                    description={item.answer}
-                  />
-                )
-              })}
-            </div>
-          )}
+          
         </div>
       </ServiceTemplateStyles>
     </>
