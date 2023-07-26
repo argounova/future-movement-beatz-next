@@ -4,14 +4,7 @@ import Head from "next/head"
 import MixingComponent from "@/components/MixingServiceContent"
 
 
-const MixingService = (serviceInfo) => {
-    serviceInfo = {
-        headerImageMixing: true,
-        title: 'Experience Sonic Brilliance',
-        introduction: 'Music Mixing and Mastering by Abstraktius Artimus',
-        description: 'Description for mixing and mastering goes here',
-    }
-
+const MixingService = () => {
   return (
     <>
       <Head>
@@ -26,6 +19,5 @@ const MixingService = (serviceInfo) => {
     </>
   )
 }
-
 
 export default MixingService

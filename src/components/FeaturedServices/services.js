@@ -18,7 +18,7 @@ const fmbServices = [
         serviceName: "Mixing & Mastering",
     },
     {
-        linkTo: "/services/musicspace-playlists",
+        linkTo: "/comingsoon",
         imageURL: "https://future-movement-beatz.s3.amazonaws.com/featured-services-playlist-submissions.jpg",
         altText: "professionally curated playlists",
         serviceName: "MusicSpace Playlist Submissions",

@@ -1,30 +1,9 @@
 import React from "react"
-import ProductTemplate from "../../templates/product-template"
 import Layout from "../../components/Layout"
 import Head from "next/head"
 
 
-const PlaylistService = (serviceInfo) => {
-    serviceInfo = {
-        headerImageProduction: true,
-        title: 'MusicSpace Playlist Submissions',
-        introduction: 'Introduction for playlists goes here',
-        description: 'Description for playlists goes here',
-        faqs: [
-            {
-                question: 'FAQ Question 1',
-                answer: 'FAQ Answer 1',
-            },
-            {
-                question: 'FAQ Question 2',
-                answer: 'FAQ Answer 2',
-            },
-            {
-                question: 'FAQ Question 3',
-                answer: 'FAQ Answer 3',
-            },
-        ]
-    }
+const PlaylistService = () => {
   return (
     <>
       <Head>
@@ -34,9 +13,7 @@ const PlaylistService = (serviceInfo) => {
         <link rel="icon" href="/logov2.png" />
       </Head>
       <Layout>
-        <ProductTemplate
-            {...serviceInfo}       
-        />
+        
       </Layout>
     </>
   )

@@ -43,7 +43,7 @@ const Footer = () => {
               <li><Link href="/services/artwork">Album Artwork</Link></li>
               <li><Link href="/services/production">Music Production</Link></li>
               <li><Link href="/services/mixing">Mixing & Mastering</Link></li>
-              <li><Link href="/services/musicspace-playlists">Playlist Submissions</Link></li>
+              <li><Link href="/comingsoon">Playlist Submissions</Link></li>
               {/* {allProduct.map((item, index) => {
                 const { gatsbyPath, title } = item
 

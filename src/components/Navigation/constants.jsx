@@ -8,6 +8,10 @@ export const menuItems = [
     text: "services",
   },
   {
+    path: "/comingsoon",
+    text: "musicspace playlist submissions",
+  },
+  {
     path: "/about",
     text: "about",
   },

@@ -1,30 +1,10 @@
 import React from "react"
-import ProductTemplate from "../../templates/product-template"
 import Layout from "../../components/Layout"
 import Head from "next/head"
+import ProductionComponent from "@/components/Production"
 
 
-const ProductionService = (serviceInfo) => {
-    serviceInfo = {
-        headerImageProduction: true,
-        title: 'Music Production',
-        introduction: 'Introduction for music production goes here',
-        description: 'Description for music production goes here',
-        faqs: [
-            {
-                question: 'FAQ Question 1',
-                answer: 'FAQ Answer 1',
-            },
-            {
-                question: 'FAQ Question 2',
-                answer: 'FAQ Answer 2',
-            },
-            {
-                question: 'FAQ Question 3',
-                answer: 'FAQ Answer 3',
-            },
-        ]
-    }
+const ProductionService = () => {
   return (
     <>
       <Head>
@@ -34,13 +14,10 @@ const ProductionService = (serviceInfo) => {
         <link rel="icon" href="/logov2.png" />
       </Head>
       <Layout>
-        <ProductTemplate
-            {...serviceInfo}       
-        />
+        <ProductionComponent />
       </Layout>
     </>
   )
 }
-
 
 export default ProductionService
