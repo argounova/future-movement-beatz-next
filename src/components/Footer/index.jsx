@@ -8,7 +8,9 @@ import {
   FaTiktok as Tiktok,
   FaInstagram as Instagram,
   FaYoutube as Youtube,
+  FaTwitter as Twitter,
 } from "react-icons/fa"
+import { TbBrandLinktree as LinkTree } from "react-icons/tb";
 
 const Footer = () => {
   // const allProduct = useAllProduct()
@@ -41,6 +43,7 @@ const Footer = () => {
               <li><Link href="/services/artwork">Album Artwork</Link></li>
               <li><Link href="/services/production">Music Production</Link></li>
               <li><Link href="/services/mixing">Mixing & Mastering</Link></li>
+              <li><Link href="/services/playlists">Playlist Submissions</Link></li>
               {/* {allProduct.map((item, index) => {
                 const { gatsbyPath, title } = item
 
@@ -59,7 +62,9 @@ const Footer = () => {
 
         {metadata.tiktokUsername ||
         metadata.instagramUsername ||
-        metadata.youtubeUsername ? (
+        metadata.youtubeUsername ||
+        metadata.twitterUsername ||
+        metadata.linktreeUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
               Follow Future Movement Beatz
@@ -98,6 +103,28 @@ const Footer = () => {
                   </a>
                 </li>
               )}
+              {metadata.twitterUsername && (
+                <li>
+                  <a
+                    href={`https://www.twitter.com/${metadata.twitterUsername}`}
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                  >
+                    <Twitter />
+                  </a>
+                </li>
+              )}
+              {metadata.linktreeUsername && (
+                <li>
+                  <a
+                    href={`https://www.linktr.ee/${metadata.linktreeUsername}`}
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                  >
+                    <LinkTree />
+                  </a>
+                </li>
+              )}
             </ul>
           </FooterMenuStyles>
         ) : (
@@ -115,7 +142,6 @@ const Footer = () => {
             >
               {metadata.developerName}
             </a>
-            <span>.</span>
           </p>
         </div>
       </CopyrightStyles>
