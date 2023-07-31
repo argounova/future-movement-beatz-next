@@ -1,5 +1,6 @@
 import * as React from "react"
-import Navigation from "../Navigation"
+// import Navigation from "../Navigation"
+import TopNavigation from "../TopNavigatiion"
 import AnimMain from "../AnimMain"
 import Footer from "../Footer"
 import { motion } from "framer-motion"
@@ -14,7 +15,7 @@ const Layout = ({ children }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75 }}
       >
-        <Navigation />
+        <TopNavigation />
         <AnimMain>
           {children}
           <Footer />
