@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 
-export const FeaturedProductsStyles = styled.section`
+export const ContainerStyles = styled.section`
   > div {
     &.container__scroll {
       gap: calc(var(--gap) / 2);
@@ -8,7 +8,7 @@ export const FeaturedProductsStyles = styled.section`
       padding-left: var(--borderSpacing);
       padding-right: var(--borderSpacing);
       margin-left: calc(var(--borderSpacing) * -1);
-      width: calc(100% + (var(--borderSpacing) * 2));
+      width: 100%;
 
       @media (min-width: 1200px) {
         padding-bottom: 0;
@@ -22,43 +22,25 @@ export const FeaturedProductsStyles = styled.section`
   }
 `
 
-export const FeaturedProductStyles = styled.aside`
+export const ProductStyles = styled.div`
   min-height: 800px;
-  min-width: 340px;
-  background-color: #000;
-  flex: 0 0 80%;
+  width: 450px;
+  background-color: transparent;
+  flex: 0 0 100%;
   overflow: hidden;
   scroll-snap-align: center;
-  scroll-margin-left: 25px;
   position: relative;
   border-radius: 6px;
-  border: 2px solid rgba(255, 255, 255, 0.15);
   transition: border-color 0.6s ease, box-shadow 0.6s ease;
 
-  @media (min-width: 414px) {
-    flex-basis: 45%;
-  }
-
-  @media (min-width: 1024px) {
-    flex-basis: 40%;
-  }
-
-  @media (min-width: 1200px) {
-    flex-basis: 30%;
-  }
-
   .features__item--img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+    width: 450px;
+    
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   .features__item--content {
-    width: 100%;
+    width: 450px;
     position: absolute;
     z-index: 2;
     padding: 20px 10px;
@@ -83,17 +65,9 @@ export const FeaturedProductStyles = styled.aside`
       padding: 50px 30px;
     }
 
-    h4,
-    p {
-      text-shadow: var(--textShadow);
-    }
-
     h4 {
       color: #fff;
-    }
-
-    p {
-      color: var(--bodyColor);
+      text-shadow: var(--textShadow);
     }
   }
 

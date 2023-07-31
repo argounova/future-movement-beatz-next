@@ -207,7 +207,7 @@ blockquote {
   margin-right: auto;
 }
 .container__tight {
-    max-width: 1400px;
+    max-width: 1200px;
 }
 .container__scroll {
     overflow-x: scroll;
@@ -257,7 +257,6 @@ blockquote {
 
 .intro__area {
   margin-bottom: calc(var(--gap) * 2);
-  max-width: 700px;
 }
 .intro__area h2 {
   display: inline-block;

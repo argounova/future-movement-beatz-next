@@ -20,10 +20,7 @@ export default function Home() {
       <Layout>
         <HomeHeaderBanner />
         <BannerText />
-      <FeaturedServices
-        title="What We Do"
-        introduction="Let us help with your next album"
-      />
+      <FeaturedServices />
       <BannerVideo 
         videoSrcURL1="https://www.youtube.com/embed/tLRp9vaY6VM"
         videoTitle1="Abstrakt Noize 3 Official Visualizer"
