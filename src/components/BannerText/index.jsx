@@ -1,20 +1,21 @@
-import * as React from "react"
 import Button from "../Button/index"
-import { Styles } from "./style"
+import { BannerTextStyles } from "./style"
+import {
+  Container
+} from "@mui/material"
 
-const BannerText = ({ title, content, linkText }) => {
+
+const BannerText = () => {
   return (
-    <Styles>
-      <div className="gradient">
-      <div className="container container__tight">
+    <BannerTextStyles>
+      <Container maxWidth='xl' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', flexDirection: 'column', height: '100%' }}>
         <div>
-          {title && <h2>{title}</h2>}
-          {content && <p>{content}</p>}
-          <Button text={linkText} href="/services/all" arrow={false}/>
+          <h2>It is important that the musician just lets the music be written.</h2>
+          <p>- Bjork</p>
         </div>
-      </div>
-      </div>
-    </Styles>
+        <Button text='View Services' href="/services/all" />
+      </Container>
+    </BannerTextStyles>
   )
 }
 
