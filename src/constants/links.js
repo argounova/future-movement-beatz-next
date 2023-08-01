@@ -8,11 +8,11 @@ export const menuItems = [
     text: "services",
   },
   {
-    path: "/comingsoon",
-    text: "singles",
+    path: "#about",
+    text: "about",
   },
   {
-    path: "/contact",
+    path: "#contact",
     text: "contact",
   },
 ]

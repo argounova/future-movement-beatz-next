@@ -31,7 +31,8 @@ const GroupedServiceCards = () => {
     return (
         <Container disableGutters sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center', minWidth: '95vw', minHeight: '60vh' }}>
             {services.map((each) => (
-                <ServiceCard 
+                <ServiceCard
+                    key={each.index} 
                     href={each.href}
                     serviceImage={each.serviceImage}
                     serviceTitle={each.serviceTitle}

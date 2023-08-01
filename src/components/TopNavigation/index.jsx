@@ -167,7 +167,7 @@ function scrolltoContact() {
                 >
                 {pages.map((each) => (
                   <MenuItem key={each.index} onClick={handleCloseNavMenu}>
-                    <Link href={`${each.linkTo}`}>
+                    <Link href={`${each.linkTo}`} style={{ textDecoration: 'none' }}>
                         <Typography textAlign="center" sx={{ fontWeight: 'bold', color: 'var(--fmbPurple1)', letterSpacing: '.1rem' }}>{each.page}</Typography>
                     </Link>
                   </MenuItem>

@@ -17,7 +17,7 @@ const ServiceCard = ({ href, serviceImage, serviceTitle }) => {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.2 }}
     >
-      <Link href={href}>
+      <Link href={href} style={{  textDecoration: 'none'}}>
         <Card className="serviceCard">
           <CardActionArea>
             <CardMedia

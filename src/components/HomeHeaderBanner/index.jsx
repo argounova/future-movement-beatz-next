@@ -36,7 +36,7 @@ const HomeHeaderBanner = () => {
             <Button
               className="btn"
               text="Learn More"
-              href="/about"
+              href="#about"
             />
           </motion.div>
         </motion.div>
