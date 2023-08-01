@@ -4,13 +4,17 @@ export const menuItems = [
     text: "home",
   },
   {
+    path: "/services/all",
+    text: "services",
+  },
+  {
+    path: "/comingsoon",
+    text: "musicspace playlist submissions",
+  },
+  {
     path: "/about",
     text: "about",
   },
-  // {
-  //   path: "/comingsoon",
-  //   text: "news",
-  // },
   {
     path: "/contact",
     text: "contact",

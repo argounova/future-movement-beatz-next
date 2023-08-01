@@ -9,9 +9,7 @@ const SimpleBanner = ({ children, title }) => {
       {title && (
         <div className="container">
           <div className="banner__content">
-            <h1>
-              {title}
-            </h1>
+            <h1>{title}</h1>
           </div>
         </div>
       )}

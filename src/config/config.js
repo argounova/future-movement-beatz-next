@@ -5,8 +5,10 @@ export const metadata = {
     tiktokUsername: "abstraktiusartimus",
     youtubeUsername: "abstraktius_artimus",
     instagramUsername: "abstraktius_artimus",
+    twitterUsername: "abstraktius",
+    linktreeUsername: "AbstraktiusArtimus",
     image: "/background1.jpg",
     siteUrl: "https://futuremovementbeatz.com/",
-    developerName: "Turn17 Media",
+    developerName: "Turn17 Media, LLC",
     developerUrl: "https://www.turn17media.com",
 }

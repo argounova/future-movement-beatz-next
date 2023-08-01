@@ -1,47 +1,99 @@
 import * as React from "react"
-import Image from "next/image"
 import { VideoStyles } from "./style"
-import vidBannerImg from "../../../public/images/smoke-background.jpg"
+import { motion } from "framer-motion"
+import {
+  Box,
+  Container,
+  Typography
+} from "@mui/material"
 
-const Video = ({ videoSrcURL1, videoTitle1, videoSrcURL2, videoTitle2 }) => {
-    return(
-        <VideoStyles>
-            <Image
-                className="perks__image--bg"
-                src={vidBannerImg}
-                alt="video banner background image"
-                placeholder="dominantColor"
+
+const Video = () => {
+  return(
+    <VideoStyles>
+      <Container maxWidth="xl" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Box className="intro__area" sx={{ textAlign: 'center' }}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
+            <h2>Latest on YouTube</h2>
+            <p>Check our <a href="https://www.youtube.com/@abstraktius_artimus" target="_blank" rel="nofollow noreferrer noopener"><span>channel</span></a> for music videos, playlists, and more.</p>
+          </motion.div>
+        </Box>
+      </Container>
+      <Container maxWidth="xl" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly' }}>
+        <Box sx={{ width: '80%', display: 'flex', justifyContent: 'space-evenly', mb: {sm: 0, lg: 1}, flexDirection: 'row', flexWrap: 'wrap' }}>
+          <motion.div
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/ArGRVM9mwz4"
+              title="Abstrakt Noize 3 Official Visualizer"
+              className="iframe-video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+              frameborder={0}
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
             />
-            <div className="perks__image--overlay"></div>
-            <div className="container">
-                <div className="video" style={{ padding: '50px' }}>
-                    <iframe
-                    src={videoSrcURL1}
-                    title={videoTitle1}
-                    width="560"
-                    height="315"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
-                    frameborder="0"
-                    webkitallowfullscreen="true"
-                    mozallowfullscreen="true"
-                    allowFullScreen
-                    />
-                </div>
-                <div className="video" style={{ padding: '50px' }}>
-                    <iframe
-                    src={videoSrcURL2}
-                    title={videoTitle2}
-                    width="560"
-                    height="315"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
-                    frameborder="0"
-                    webkitallowfullscreen="true"
-                    mozallowfullscreen="true"
-                    allowFullScreen
-                    />
-                </div>
-            </div>
-        </VideoStyles>
-    )
+          </motion.div>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/skc-suDwh4Q"
+              title="Abstrakt Noize 3 Official Visualizer"
+              className="iframe-video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+              frameborder={0}
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+            />
+          </motion.div>
+        </Box>
+        <Box sx={{ width: '80%', display: 'flex', justifyContent: 'space-evenly', mt: {sm: 0, lg: 1},  flexDirection: 'row', flexWrap: 'wrap' }}>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.4 }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/To3L1oN_PdM"
+              title="Peace of Mind prod by Jiro"
+              className="iframe-video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+              frameborder={0}
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+            />
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.6 }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/te7CyIdHD0U"
+              title="Peace of Mind prod by Jiro"
+              className="iframe-video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+              frameborder={0}
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+            />
+          </motion.div>
+        </Box>
+      </Container>
+    </VideoStyles>
+  )
 }
 export default Video

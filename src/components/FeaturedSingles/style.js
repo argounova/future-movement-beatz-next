@@ -1,6 +1,9 @@
 import styled from "@emotion/styled"
 
 export const FeaturedSinglesStyles = styled.section`
+margin-left: 16px;
+margin-bottom: 50px;
+
   > div {
     &.container__scroll {
       gap: calc(var(--gap) / 2);
@@ -63,10 +66,10 @@ export const FeaturedSingleStyles = styled.aside`
 
   .features__item--content {
     width: 100%;
-    height: 30%;
+    height: 50%;
     position: absolute;
+    padding-left: 10px;
     z-index: 2;
-    padding: 10px 10px;
     bottom: 0;
     left: 0;
     right: 0;

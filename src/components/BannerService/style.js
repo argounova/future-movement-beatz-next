@@ -18,7 +18,7 @@ export const Styles = styled.section`
     top: 0;
     left: 0;
     width: 100%;
-    height: 85%;
+    height: 50%;
     object-fit: cover;
     background-repeat: no-repeat;
     z-index: 1;

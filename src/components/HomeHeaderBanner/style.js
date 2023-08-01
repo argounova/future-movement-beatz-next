@@ -1,16 +1,8 @@
 import styled from "@emotion/styled"
 
-export const Styles = styled.section`
-  height: 100vh;
+export const BannerStyles = styled.section`
+  height: 65vh;
   position: relative;
-  padding: 30px var(--borderSpacing);
-
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
 
   .gradient,
   .banner__image {
@@ -32,40 +24,29 @@ export const Styles = styled.section`
   }
 
   .banner__content {
-    position: relative;
-    z-index: 2;
-    min-height: 33vh;
-    width: 100%;
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 500px;
+
 
     @media (min-width: 768px) {
       width: 66vw;
     }
 
     h1,
-    h2 {
+    h5 {
+      color: var(--contrastLight3);
       text-shadow: var(--textShadow);
     }
 
     h1 {
       border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-      display: inline-block;
     }
 
-    h2 {
-      font-size: var(--h5);
+    h5 {
       font-weight: 400;
     }
-
-    h1,
-    .price {
-      margin-top: 0;
-      font-size: var(--bannerTitle);
-    }
-  }
-
-  .banner__btns {
-    display: flex;
-    gap: var(--gap);
   }
 `

@@ -1,5 +1,5 @@
 :root {
-  --contrastDark1: #0D0D0D;
+  --contrastDark1: #070707;
   --contrastDark2: #404040;
   --contrastDark3: #262626;
   --contrastMedium1: #404040;
@@ -13,6 +13,8 @@
   --fmbPurple4: #FD99FA;
   --fmbPurple5: #DC47EA;
   --smokeDark: #08080A;  
+  --white: #fff;
+  --black: #000;
 
   --bannerTitle: 34px;
   --borderSpacing: 30px;
@@ -20,10 +22,11 @@
   --blockquote: 20px;
   --background: #242426;
   --primary: #FD99FA;
-  --bodyColor: #afc2cb;
+  --bodyColor: #BFBFBF;
   --inActive: #555;
   --letterSpacing: -0.075rem;
   --boxShadow: 0px 15px 22px 3px rgba(0, 0, 0, 0.55);
+  --boxShadowHighlight: 0px 5px 10px 3px var(--primary);
   --textShadow: 0px 0px 5px rgba(0, 0, 0, 1);
   --p: 14px;
   --h2: 20px;
@@ -96,8 +99,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background);
-  color: #fff;
+  background-color: var(--contrastDark3) !important;
+  color: #fff !important;
   overflow-x: hidden;
   font-size: var(--p);
 }
@@ -207,7 +210,7 @@ blockquote {
   margin-right: auto;
 }
 .container__tight {
-    max-width: 1400px;
+    max-width: 1500px;
 }
 .container__scroll {
     overflow-x: scroll;
@@ -243,21 +246,9 @@ blockquote {
   margin-bottom: var(--gap);
 }
 
-.feed {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1400px;
-}
-.feed * {
-  flex: 0 0 100%;
-}
-
 .intro__area {
-  margin-bottom: calc(var(--gap) * 2);
-  max-width: 700px;
+  margin-bottom: calc(var(--gap));
+  margin-top: calc(var(--gap));
 }
 .intro__area h2 {
   display: inline-block;
@@ -269,7 +260,7 @@ blockquote {
 }
 
 .section {
-  background-color: #242426;
+  background-color: var(--contrastDark3);
   margin-top: var(--sectionMargin);
   margin-bottom: var(--sectionMargin);
   padding: 0 var(--borderSpacing);
@@ -282,7 +273,7 @@ blockquote {
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1850px) {
   .container {
     overflow-x: visible;
   }
@@ -297,11 +288,5 @@ blockquote {
 @media(min-width:1024px) {
   .feed {
     flex-basis: calc(33.333% - 27px);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
   }
 }

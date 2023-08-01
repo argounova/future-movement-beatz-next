@@ -89,7 +89,7 @@ const Navigation = () => {
                   </Link>
                 </li>
               ))}
-                <li className={subNavIsOpen ? "open" : "closed"}>
+                {/* <li className={subNavIsOpen ? "open" : "closed"}>
                   <button
                     type="button"
                     onClick={toggleSubNav}
@@ -113,7 +113,7 @@ const Navigation = () => {
                       </Link>
                     </li>
                     <hr />
-                    {/* {featuredProduct.map((item, index) => {
+                    {featuredProduct.map((item, index) => {
                       const { gatsbyPath, title } = item
                       return (
                         <li key={index}>
@@ -126,9 +126,9 @@ const Navigation = () => {
                           </Link>
                         </li>
                       )
-                    })} */}
+                    })}
                   </SubNavStyles>
-                </li>
+                </li> */}
             </NavTopLevel>
           </motion.div>
         </Styles>
