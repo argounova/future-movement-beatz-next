@@ -7,6 +7,8 @@ import FeaturedServices from "@/components/FeaturedServices"
 import BannerVideo from "@/components/BannerVideo"
 import FeaturedSingles from "@/components/FeaturedSingles"
 import HomeHeaderBanner from "@/components/HomeHeaderBanner"
+import About from "@/components/About"
+import Contact from "@/components/Contact"
 
 
 export default function Home() {
@@ -23,10 +25,9 @@ export default function Home() {
       <BannerText />
       <FeaturedServices />
       <BannerVideo />
-      <FeaturedSingles
-        title="Latest Singles"
-        introduction="Available to stream now"
-      />
+      <FeaturedSingles />
+      <About />
+      <Contact />
       <Footer />
     </>
   )

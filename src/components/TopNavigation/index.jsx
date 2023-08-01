@@ -25,15 +25,34 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 const pages = [
     {
         page: 'Services',
-        linkTo: '/services/all'
+        linkTo: '/services/all',
     },
     {
         page: 'About',
-        linkTo: '/about'
+        linkTo: '/#about',
     },
     {
         page: 'Contact',
-        linkTo: '/contact'
+        linkTo: '/#contact',
+    },
+]
+
+const services = [
+    {
+        page: 'Artwork',
+        linkTo: '/services/artwork',
+    },
+    {
+        page: 'Mixing',
+        linkTo: '/services/mixing',
+    },
+    {
+        page: 'Playlists',
+        linkTo: '/services/playlists',
+    },
+    {
+        page: 'Production',
+        linkTo: '/services/production',
     },
 ]
 
@@ -81,6 +100,14 @@ function TopNavigation(props) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   }
+
+function scrolltoAbout() {
+  aboutComponent.current?.scrollIntoView({ behavior: 'smooth' })
+}
+
+function scrolltoContact() {
+  contactComponent.current?.scrollIntoView({ behavior: 'smooth' })
+}
 
   return (
     <TopNavigationStyles>
@@ -151,7 +178,7 @@ function TopNavigation(props) {
                 {pages.map((each) => (
                   <Button
                     key={each.index}
-                    onClick={handleCloseNavMenu}
+                    
                     sx={{ my: 2, color: 'var(--fmbPurple4)', display: 'flex', fontWeight: 'bold', letterSpacing: '.1rem' }}
                     href={`${each.linkTo}`}
                   >

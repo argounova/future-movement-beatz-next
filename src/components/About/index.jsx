@@ -17,7 +17,7 @@ const About = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2.5 }}
         >
-          <Typography variant="h4" align="center" style={{ color: 'var(--contrastLight3)' }}>Welcome to Future Movement Beatz, where creativity knows no bounds. Founded and owned by Stevan Jaramillo, also known as Abstraktius Artimus, our journey began in 2012 with a singular vision: <span style={{ color: 'var(--fmbPurple5)' }}>to help artists achieve unparalleled success in their musical endeavors</span>.</Typography>
+          <Typography id="about" variant="h4" align="center" style={{ color: 'var(--contrastLight3)' }}>Welcome to Future Movement Beatz, where creativity knows no bounds. Founded and owned by Stevan Jaramillo, also known as Abstraktius Artimus, our journey began in 2012 with a singular vision: <span style={{ color: 'var(--fmbPurple5)' }}>to help artists achieve unparalleled success in their musical endeavors</span>.</Typography>
         </motion.div>
         <hr />
         {aboutContent.map((section) => (
@@ -42,12 +42,6 @@ const About = () => {
             </Typography>
           </motion.div>
         ))}
-        <br />
-        <Button 
-          href="/contact"
-          text="Get In Touch"
-          arrow={true}
-        />
       </Container>  
     </AboutStyles>
   )

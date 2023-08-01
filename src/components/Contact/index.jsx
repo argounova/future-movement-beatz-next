@@ -51,6 +51,9 @@ const Contact = () => {
   
   return (
     <ContactStyles className="section">
+      <div className='intro__area'>
+        <h2 id='contact'>Get in Touch</h2>
+      </div>
 
       <div style={{ display: show ? "block" : "none" }}>
         <h1>Message Sent!</h1>

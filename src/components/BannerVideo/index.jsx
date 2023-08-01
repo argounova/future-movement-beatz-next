@@ -31,7 +31,7 @@ const Video = () => {
             transition={{ duration: 2 }}
           >
             <iframe
-              src="https://www.youtube.com/embed/tLRp9vaY6VM"
+              src="https://www.youtube.com/embed/ArGRVM9mwz4"
               title="Abstrakt Noize 3 Official Visualizer"
               className="iframe-video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
@@ -47,7 +47,7 @@ const Video = () => {
             transition={{ duration: 2 }}
           >
             <iframe
-              src="https://www.youtube.com/embed/tLRp9vaY6VM"
+              src="https://www.youtube.com/embed/skc-suDwh4Q"
               title="Abstrakt Noize 3 Official Visualizer"
               className="iframe-video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
@@ -65,7 +65,7 @@ const Video = () => {
             transition={{ duration: 1.4 }}
           >
             <iframe
-              src="https://www.youtube.com/embed/0q5MEoA2Wyc"
+              src="https://www.youtube.com/embed/To3L1oN_PdM"
               title="Peace of Mind prod by Jiro"
               className="iframe-video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
@@ -81,7 +81,7 @@ const Video = () => {
             transition={{ duration: 1.6 }}
           >
             <iframe
-              src="https://www.youtube.com/embed/0q5MEoA2Wyc"
+              src="https://www.youtube.com/embed/te7CyIdHD0U"
               title="Peace of Mind prod by Jiro"
               className="iframe-video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
