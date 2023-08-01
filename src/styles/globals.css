@@ -272,7 +272,7 @@ blockquote {
 }
 
 .section {
-  background-color: #242426;
+  background-color: var(--contrastDark3);
   margin-top: var(--sectionMargin);
   margin-bottom: var(--sectionMargin);
   padding: 0 var(--borderSpacing);
@@ -303,8 +303,8 @@ blockquote {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
