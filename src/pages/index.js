@@ -1,6 +1,7 @@
 import * as React from "react"
 import Head from 'next/head'
-import Layout from '@/components/Layout'
+import TopNavigation from "@/components/TopNavigation"
+import Footer from "@/components/Footer"
 import BannerText from "@/components/BannerText"
 import FeaturedServices from "@/components/FeaturedServices"
 import BannerVideo from "@/components/BannerVideo"
@@ -17,9 +18,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logov2.png" />
       </Head>
-      <Layout>
-        <HomeHeaderBanner />
-        <BannerText />
+      <TopNavigation />
+      <HomeHeaderBanner />
+      <BannerText />
       <FeaturedServices />
       <BannerVideo 
         videoSrcURL1="https://www.youtube.com/embed/tLRp9vaY6VM"
@@ -31,7 +32,7 @@ export default function Home() {
         title="Latest Singles"
         introduction="Available to stream now"
       />
-      </Layout>
+      <Footer />
     </>
   )
 }

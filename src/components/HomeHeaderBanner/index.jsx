@@ -21,7 +21,7 @@ const HomeHeaderBanner = () => {
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: '5', height: '600px' }}>
         <div className="banner__content">
           <h1>Future Movement Beatz</h1>
-          <h2>Music production, custom album art cover art, mixing & mastering, and playlist curating.</h2>
+          <h5>Music production, custom album art cover art, mixing & mastering, and playlist curating.</h5>
           <div>
             <Button
               className="btn"

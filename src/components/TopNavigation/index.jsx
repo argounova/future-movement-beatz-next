@@ -85,7 +85,7 @@ function TopNavigation(props) {
   return (
     <TopNavigationStyles>
       <CssBaseline />
-        <AppBar position="static" elevation={0} sx={{ backgroundColor: 'var(--contrastDark1)' }}>
+        <AppBar position="static" elevation={0} sx={{ backgroundColor: 'var(--black)' }}>
           <Container maxWidth="xl">
             <Toolbar disableGutters id="back-to-top-anchor" sx={{ mt: 1, mb: 1 }}>
                 <Link href="/">

@@ -13,11 +13,13 @@ import fmbServices from "./services"
 
 const FeaturedServices = () => {
   return (
-    <Container maxWidth='xl' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', minHeight: '100vh', mt: 10, mb: 10 }}>
-      <Box className="intro__area">
-        <h2>What We Do</h2>
-        <p>Let us help with your next album</p>
-      </Box>
+    <>
+      <Container maxWidth='xl' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', mt: 10 }}>
+        <Box className="intro__area">
+          <h2>What We Do</h2>
+          <p>Let us help with your next album</p>
+        </Box>
+      </Container>
       <ContainerStyles>
         <Box className="container container__tight container__scroll">
           {fmbServices.map((service, index) => (
@@ -27,8 +29,8 @@ const FeaturedServices = () => {
                   className="features__item--img"
                   src={`${service.imageURL}`}
                   alt={service.altText}
-                  width={450}
-                  height={800}
+                  width={350}
+                  height={600}
                 />
               </Link>
               <div className="features__item--content">
@@ -39,10 +41,7 @@ const FeaturedServices = () => {
           ))}
         </Box>
       </ContainerStyles>
-      <Box sx={{ mt: 10 }}>
-        <Button href="/services/all" text="View All Services" />
-      </Box>
-    </Container>
+    </>
   )
 }
 

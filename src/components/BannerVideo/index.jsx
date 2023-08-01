@@ -21,7 +21,7 @@ const Video = ({ videoSrcURL1, videoTitle1, videoSrcURL2, videoTitle2 }) => {
                     width="560"
                     height="315"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
-                    frameborder="0"
+                    frameborder={0}
                     webkitallowfullscreen="true"
                     mozallowfullscreen="true"
                     allowFullScreen
@@ -34,7 +34,7 @@ const Video = ({ videoSrcURL1, videoTitle1, videoSrcURL2, videoTitle2 }) => {
                     width="560"
                     height="315"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
-                    frameborder="0"
+                    frameborder={0}
                     webkitallowfullscreen="true"
                     mozallowfullscreen="true"
                     allowFullScreen

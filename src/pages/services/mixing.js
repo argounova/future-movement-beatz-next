@@ -1,5 +1,6 @@
 import React from "react"
-import Layout from "../../components/Layout"
+import TopNavigation from "@/components/TopNavigation"
+import Footer from "@/components/Footer"
 import Head from "next/head"
 import MixingComponent from "@/components/MixingServiceContent"
 
@@ -13,9 +14,9 @@ const MixingService = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logov2.png" />
       </Head>      
-      <Layout>
-        <MixingComponent />
-      </Layout>
+      <TopNavigation />
+      <MixingComponent />
+      <Footer />
     </>
   )
 }

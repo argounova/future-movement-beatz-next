@@ -36,24 +36,17 @@ export const BannerStyles = styled.section`
     }
 
     h1,
-    h2 {
+    h5 {
+      color: var(--contrastLight3);
       text-shadow: var(--textShadow);
     }
 
     h1 {
       border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-      display: inline-block;
     }
 
-    h2 {
-      font-size: var(--h5);
+    h5 {
       font-weight: 400;
-    }
-
-    h1,
-    .price {
-      margin-top: 0;
-      font-size: var(--bannerTitle);
     }
   }
 `
