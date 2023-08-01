@@ -1,7 +1,6 @@
 import * as React from "react"
 import Head from "next/head"
 import Button from "../components/Button"
-import Layout from "../components/Layout"
 import { 
     comingSoonDiv,
     comingSoonTitle,
@@ -17,7 +16,6 @@ const ComingSoon = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/logov2.png" />
             </Head>
-            <Layout>
                 <div className={comingSoonDiv}>
                     <p className={comingSoonTitle}>Coming Soon</p>
                     <p className={comingSoonInfo}>Bear with us as our new site is being built.</p>
@@ -27,9 +25,8 @@ const ComingSoon = () => {
                         arrow={true}
                     />
                 </div>
-            </Layout>
         </>
-    );
+    )
 }
 
 export default ComingSoon;

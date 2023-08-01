@@ -259,6 +259,7 @@ blockquote {
 
 .intro__area {
   margin-bottom: calc(var(--gap));
+  margin-top: calc(var(--gap));
 }
 .intro__area h2 {
   display: inline-block;

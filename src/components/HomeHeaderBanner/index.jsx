@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { BannerStyles } from "./style"
 import Button from "../Button"
+import { motion } from "framer-motion"
 import {
   Container
 } from "@mui/material"
@@ -19,17 +20,26 @@ const HomeHeaderBanner = () => {
         unoptimized={true}
       />
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: '5', height: '600px' }}>
-        <div className="banner__content">
+        <motion.div 
+          className="banner__content"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <h1>Future Movement Beatz</h1>
           <h5>Music production, custom album art cover art, mixing & mastering, and playlist curating.</h5>
-          <div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.2 }}
+          >
             <Button
               className="btn"
               text="Learn More"
               href="/about"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </Container>
       <div className="gradient"></div>
     </BannerStyles>

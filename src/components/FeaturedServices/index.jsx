@@ -14,7 +14,7 @@ import fmbServices from "./services"
 const FeaturedServices = () => {
   return (
     <>
-      <Container maxWidth='xl' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', mt: 10 }}>
+      <Container maxWidth='xl' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center' }}>
         <Box className="intro__area">
           <h2>What We Do</h2>
           <p>Let us help with your next album</p>

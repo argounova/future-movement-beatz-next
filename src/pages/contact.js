@@ -1,5 +1,4 @@
 import * as React from "react"
-import Layout from "../components/Layout"
 import Head from "next/head"
 import Image from "next/image"
 import Contact from "../components/Contact/index"
@@ -16,7 +15,6 @@ const contact = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logov2.png" />
       </Head>      
-      <Layout>
         <SimpleBanner title="Contact Future Movement Beatz">
           <Image
             className="banner__image"
@@ -27,7 +25,6 @@ const contact = () => {
           />
         </SimpleBanner>
         <Contact />
-      </Layout>
     </>
   )
 }

@@ -22,12 +22,7 @@ export default function Home() {
       <HomeHeaderBanner />
       <BannerText />
       <FeaturedServices />
-      <BannerVideo 
-        videoSrcURL1="https://www.youtube.com/embed/tLRp9vaY6VM"
-        videoTitle1="Abstrakt Noize 3 Official Visualizer"
-        videoSrcURL2="https://www.youtube.com/embed/0q5MEoA2Wyc"
-        videoTitle2="Peace of Mind prod by Jiro"
-      />
+      <BannerVideo />
       <FeaturedSingles
         title="Latest Singles"
         introduction="Available to stream now"
