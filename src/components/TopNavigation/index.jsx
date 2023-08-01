@@ -37,25 +37,6 @@ const pages = [
     },
 ]
 
-const services = [
-    {
-        page: 'Artwork',
-        linkTo: '/services/artwork',
-    },
-    {
-        page: 'Mixing',
-        linkTo: '/services/mixing',
-    },
-    {
-        page: 'Playlists',
-        linkTo: '/services/playlists',
-    },
-    {
-        page: 'Production',
-        linkTo: '/services/production',
-    },
-]
-
 function ScrollTop(props) {
   const { children } = props
   const trigger = useScrollTrigger({
@@ -100,14 +81,6 @@ function TopNavigation(props) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   }
-
-function scrolltoAbout() {
-  aboutComponent.current?.scrollIntoView({ behavior: 'smooth' })
-}
-
-function scrolltoContact() {
-  contactComponent.current?.scrollIntoView({ behavior: 'smooth' })
-}
 
   return (
     <TopNavigationStyles>
@@ -178,7 +151,6 @@ function scrolltoContact() {
                 {pages.map((each) => (
                   <Button
                     key={each.index}
-                    
                     sx={{ my: 2, color: 'var(--fmbPurple4)', display: 'flex', fontWeight: 'bold', letterSpacing: '.1rem' }}
                     href={`${each.linkTo}`}
                   >
