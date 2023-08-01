@@ -1,28 +1,24 @@
 import styled from "@emotion/styled"
 
 const AllServicesStyles = styled.div`
- .textDiv {
-    position: absolute;
-    top: 110px;
-    left: 25px;
-    
+ .compDiv {
+    display: flex;
+    background-image: url(https://future-movement-beatz.s3.amazonaws.com/all-services-background.jpg);
+    width: 100vw;
+    height: fit-content;
+ }
 
-    @media (min-width: 600px) {
-        top: 150px;
-    }
-    @media (min-width: 1000px) {
-        top: 250px;
-    }
-    @media (min-width: 1200px) {
-        left: 75px;
-    }
-    @media (min-width: 1200px) {
-        left: 10%;
-        background-color: #0d0d0d;
-        border-radius: 8px;
-        box-shadow: 2px 1px 8px var(--fmbPurple4);
+ .serviceCard {
+    width: 345px;
+    height: 350px;
+    border: 2px solid var(--primary);
+    box-shadow: var(--boxShadow);
+    background-color: var(--black);
+    margin: 10px;
+
+    &:hover {
+        transform: scale(1.1)
     }
  }
 `
-
 export default AllServicesStyles

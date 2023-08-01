@@ -8,32 +8,14 @@ import {
 import Image from "next/image"
 import Button from "../Button"
 import content from "./content"
+import GroupedServiceCards from "./GroupedServiceCards"
 
 
 const AllServicesComponent = () => {
   return (
     <AllServicesStyles>
-      <Image 
-        src={`${'https://future-movement-beatz.s3.amazonaws.com/all-services-background.jpg'}`}
-        alt='all services image'
-        width={2500}
-        height={500}
-        priority
-        unoptimized={true}
-      />
-      <Box className='textDiv' sx={{ p: 2 }}>
-        <Typography
-          variant="h2"
-          sx={{ color: 'var(--fmbPurple4)' }}
-        >
-          Welcome to FMB &#40;Future Movement Beatz&#41;
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{ color: 'var(--contrastLight2)' }}
-        >
-          Where Vision Meets Sonic Excellence
-        </Typography>
+      <Box className='compDiv'>
+        <GroupedServiceCards />
       </Box>
       <Container maxWidth="xl" sx={{ mt: 5 }}>
         <motion.div
@@ -41,8 +23,15 @@ const AllServicesComponent = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2.5 }}
         >
-          <Typography variant="h2" align="center" style={{ color: 'var(--contrastLight2)' }}>
-            All Services
+          <Typography
+            align="center"
+            variant="h2"
+            sx={{ color: 'var(--fmbPurple4)' }}
+          >
+            Welcome to FMB &#40;Future Movement Beatz&#41;
+          </Typography>
+          <Typography variant="h3" align="center" style={{ color: 'var(--contrastLight2)', marginBottom: '30px' }}>
+            Where Vision Meets Sonic Excellence
           </Typography>
           <Typography variant="h5" align="center" style={{ color: 'var(--contrastLight3)' }}>At FMB (Future Movement Beatz), we offer a comprehensive range of artistic services that elevate your music to new heights. As a multifaceted artist, I, Abstraktius Artimus, am dedicated to transforming your creative vision into reality, with a keen ear for production and mastering, as well as a passion for crafting visually stunning album art.
           </Typography>
@@ -72,7 +61,7 @@ const AllServicesComponent = () => {
         ))}
         <br />
         <Button 
-          href="/contact"
+          href="/#contact"
           text="Get In Touch"
           arrow={true}
         />
