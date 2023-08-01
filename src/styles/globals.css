@@ -246,18 +246,6 @@ blockquote {
   margin-bottom: var(--gap);
 }
 
-.feed {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1400px;
-}
-.feed * {
-  flex: 0 0 100%;
-}
-
 .intro__area {
   margin-bottom: calc(var(--gap));
   margin-top: calc(var(--gap));
@@ -300,11 +288,5 @@ blockquote {
 @media(min-width:1024px) {
   .feed {
     flex-basis: calc(33.333% - 27px);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: light;
   }
 }
